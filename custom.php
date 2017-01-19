@@ -19,11 +19,27 @@
 
         <header id="hc-header">
 
+            <!-- nav -->
+                <nav id="hc-nav-header">
+
+                    <!-- nav wrapper -->
+                    <div class="hc-nav-wrapper">
+                        <div id="hc-nav-head">McClatchyDC</div>
+
+                        <div class="hc-shadow"></div>
+                    </div>
+                    <!-- /end nav wrapper -->
+
+                </nav>
+                <!-- /end nav -->
+
             <!-- hero image -->
-            <figure id="hc-hero" class="hc-container-img">
+            <figure id="hc-hero" class="hc-fluid-img">
                 <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
                 <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
             </figure>
+
+            
             <!-- /end hero image -->
 
             <!-- share icons -->
