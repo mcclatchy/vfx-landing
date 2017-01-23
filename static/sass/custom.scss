@@ -1,5 +1,4 @@
 @import "base.scss";
-
 //  _____                 _                                 _             _
 // / ____|               | |                               | |           | |
 // | |       _   _   ___  | |_    ___    _ __ ___      ___  | |_   _   _  | |   ___   ___
@@ -9,9 +8,14 @@
 //                                                                 __/ |
 //                                                                |___/
 
+.col-sm-12 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 #hc-nav-header {
     display: block;
-    background: #111;
+    background: rgba(17, 17, 17, 1);
 }
 
 #hc-nav-head {
@@ -31,28 +35,127 @@
     margin-top: 0;
 }
 
+#footer {
+    display: none;
+}
+
+[id*="content-body-"] {
+    background: #ccc;
+}
 // text after video
 .embed-media-details {
     display: none;
 }
-
 // video share icons
 .mi-video-utilty-bar.share-icons {
     display: none;
 }
-
 // container for video
 .embed-media.inline-video {
     border: 0;
     margin: 0;
     padding: 0;
 }
-
 // edits play button
 .jwplayer.jw-skin-mi-video .jw-display-icon-container {
     border: none;
 }
-
+// changes color of play triangle on hover
 .jwplayer.jw-skin-mi-video:hover .jw-display-icon-container .jw-icon-display {
     color: none;
+}
+// changes color of play outline on hover
+// .jwplayer.jw-skin-mi-video:hover .jw-display-icon-container {
+//     color:
+// }
+// verse player for wireframing
+.verse-player-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.verse-player-embed embed,
+.verse-player-embed iframe,
+.verse-player-embed object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+figure {
+    margin-top: 0;
+}
+
+.share-icons {
+    max-width: 100%;
+    float: right;
+
+    li {
+        margin-top: 0.4rem;
+
+        .glyphicon {
+            background: none;
+
+            a:hover {
+                color: inherit;
+                display: none;
+            }
+        }
+    }
+}
+
+.hc-breakout-section {
+    color: #111;
+}
+// maybe convert to JS?
+.ad {
+    display: none;
+}
+// parallaxing
+// html,body {
+//     padding:0;
+//     margin:0;
+//     background:black;
+// }
+
+#hc-parallax-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.hc-panels {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+#hc-hero-wrapper {
+    height: 100%;
+}
+
+#hc-hero {
+    position: fixed;
+    color: red;
+    top: 40px;
+    left: 0;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+#hc-panel1 {
+    margin-top: calc(100% - 9%);
+    background: yellow;
+    min-height: 1500px;
+    height: 100%;
 }
