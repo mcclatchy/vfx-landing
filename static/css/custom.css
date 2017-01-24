@@ -32,6 +32,7 @@
 
 .hc-vertical-align {
   max-width: 650px;
+  width: 90%;
   margin: 0 auto;
   position: absolute;
   top: 35%;
@@ -40,6 +41,9 @@
   transform: translateY(-50%);
   left: 0;
   right: 0; }
+  @media (max-width: 768px) {
+    .hc-vertical-align {
+      top: 45%; } }
 
 .hc-primary-color {
   color: black; }
@@ -1176,29 +1180,11 @@ html {
   background: #111111;
   height: 4rem; }
 
+#hc-nav-head {
+  text-transform: none;
+  font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
 .hc-nav-wrapper {
-  height: 100%; }
-
-#hc-nav-brand {
-  width: 10%;
-  color: white;
-  font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 2rem;
-  padding-top: 3.6rem; }
-
-#hc-nav-title {
-  width: 80%;
-  padding-left: 2rem; }
-
-#hc-nav-social {
-  padding-top: 3rem;
-  width: 10%; }
-
-.nav-section {
-  float: left;
-  display: inline-block;
   height: 100%; }
 
 .share-icons {
@@ -1224,14 +1210,18 @@ html {
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: rgba(255, 255, 255, 0.9);
   max-width: 800px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); }
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 768px) {
+    #hc-intro p {
+      font-size: 1.3rem;
+      line-height: 2.1rem; } }
 
 h1 {
   color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   font-size: 6rem;
   line-height: 6rem;
   z-index: 9999;
@@ -1239,15 +1229,22 @@ h1 {
   right: 0;
   text-align: center;
   padding-top: 5.3rem; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 4.2rem;
+      line-height: 4.6rem; } }
 
 h2 {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem; }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.8rem; } }
 
 #footer {
   display: none; }
@@ -1257,9 +1254,9 @@ h2 {
   padding-top: 0.2rem;
   padding-bottom: 0;
   margin: 0 auto;
-  background: #111;
+  background: #222;
   height: 5rem;
-  border-color: #111;
+  border-color: #222;
   font-weight: bold;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
@@ -1339,12 +1336,12 @@ figure {
 #hc-hero {
   background: black;
   background-image: url("../img/vfx-hero.png");
-  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
+  min-height: 750px;
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
@@ -1359,48 +1356,5 @@ figure {
   background: yellow;
   min-height: 1500px;
   height: 100%; }
-
-.play {
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-left: 60px solid rgba(255, 255, 255, 0.5);
-  margin: 5rem auto 8rem;
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  left: 10px; }
-  .play:before {
-    content: '';
-    position: absolute;
-    top: -75px;
-    left: -115px;
-    bottom: -75px;
-    right: -35px;
-    border-radius: 50%;
-    border: 10px solid rgba(255, 255, 255, 0.5);
-    z-index: 2;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s; }
-  .play:after {
-    content: '';
-    opacity: 0;
-    transition: opacity 0.6s;
-    -webkit-transition: opacity 0.6s;
-    -moz-transition: opacity 0.6s; }
-  .play:focus, .play:hover {
-    border-left: 60px solid rgba(255, 255, 255, 0.8); }
-    .play:focus:before, .play:hover:before {
-      transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      border: 10px solid rgba(255, 255, 255, 0.8); }
-  .play.active {
-    border-color: transparent; }
 
 /*# sourceMappingURL=custom.css.map */

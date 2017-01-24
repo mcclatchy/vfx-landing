@@ -17,32 +17,35 @@
     <!-- content header -->
     <section id="content-body-well">
             <!-- nav -->
-                <nav id="hc-nav-header">
-                    <!-- nav wrapper -->
-                    <div class="hc-nav-wrapper">
-                        <div id="hc-nav-brand" class="nav-section">McClatchyDC</div>
-                        <div id="hc-nav-social" class="nav-section">
-                            <!-- share icons -->
-                            <ul class="share-icons">
-                                <li class="facebook">
-                                    <a id="hc-facebook-share" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Facebook"><span></span></a>
-                                    <div class="glyphicon glyphicon-facebook"></div>
-                                </li>
-                                <li class="twitter">
-                                    <a id="hc-twitter-share" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Twitter"><span></span></a>
-                                    <div class="glyphicon glyphicon-twitter"></div>
-                                </li>
-                                <li class="email">
-                                    <a id="hc-email-share"><span></span></a>
-                                    <div class="glyphicon glyphicon-envelope"></div>
-                                </li>
-                            </ul>
-                            <!-- /end share icons -->
-                        </div>
-                    </div>
-                    <!-- /end nav wrapper -->
-                </nav>
-                <!-- /end nav -->
+            <nav id="hc-nav-header">
+
+                <!-- nav wrapper -->
+                <div class="hc-nav-wrapper">
+                    <div id="hc-nav-head">McClatchyDC</div>
+
+                    <!-- share icons -->
+                    <ul class="share-icons">
+                        <li class="facebook">
+                            <a id="hc-facebook-share" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Facebook"><span></span></a>
+                            <div class="glyphicon glyphicon-facebook"></div>
+                        </li>
+                        <li class="twitter">
+                            <a id="hc-twitter-share" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Twitter"><span></span></a>
+                            <div class="glyphicon glyphicon-twitter"></div>
+                        </li>
+                        <li class="email">
+                            <a id="hc-email-share"><span></span></a>
+                            <div class="glyphicon glyphicon-envelope"></div>
+                        </li>
+                    </ul>
+                    <!-- /end share icons -->
+
+                    <div class="hc-shadow"></div>
+                </div>
+                <!-- /end nav wrapper -->
+
+            </nav>
+            <!-- /end nav -->
 
             <div id="hc-hero">
                 <!-- <img src='static/img/vfx-hero.png' alt="FILL THIS IN"/> -->

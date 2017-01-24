@@ -22,33 +22,12 @@ html {
     height: 4rem;
 }
 
-.hc-nav-wrapper {
-   height: 100%;
-}
-
-#hc-nav-brand {
-   width: 10%;
-   color: white;
+#hc-nav-head {
+   text-transform: none;
    font-family: $sans;
-   font-weight: bold;
-   text-align: center;
-   font-size: 2rem;
-   padding-top: 3.6rem;
 }
 
-#hc-nav-title {
-   width: 80%;
-   padding-left: 2rem;
-}
-
-#hc-nav-social {
-   padding-top: 3rem;
-   width: 10%;
-}
-
-.nav-section {
-   float: left;
-   display: inline-block;
+.hc-nav-wrapper {
    height: 100%;
 }
 
@@ -85,7 +64,12 @@ html {
       font-family: $sans;
       color: rgba(255, 255, 255, 0.9);
       max-width: 800px;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+
+      @media (max-width: 768px) {
+         font-size: 1.3rem;
+         line-height: 2.1rem;
+      }
    }
 }
 
@@ -95,7 +79,7 @@ h1 {
    text-transform: uppercase;
    font-family: $sans;
    font-weight: bold;
-   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
    font-size: 6rem;
    line-height: 6rem;
    z-index: 9999;
@@ -103,10 +87,15 @@ h1 {
    right: 0;
    text-align: center;
    padding-top: 5.3rem;
+
+   @media (max-width: 768px) {
+      font-size: 4.2rem;
+      line-height: 4.6rem;
+   }
 }
 
 h2 {
-   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
    font-family: $sans;
    font-weight: bold;
    font-size: 2rem;
@@ -114,6 +103,10 @@ h2 {
    text-align: center;
    color: rgba(255, 255, 255, 0.9);
    margin-bottom: 2rem;
+
+   @media (max-width: 768px) {
+      font-size: 1.8rem;
+   }
 }
 
 #footer {
@@ -126,9 +119,9 @@ h2 {
     padding-top: 0.2rem;
     padding-bottom: 0;
     margin: 0 auto;
-    background: #111;
+    background: #222;
     height: 5rem;
-    border-color: #111;
+    border-color: #222;
     font-weight: bold;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.9);
@@ -243,12 +236,12 @@ figure {
 #hc-hero {
     background: black;
     background-image: url("../img/vfx-hero.png");
-    height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    min-height: 750px;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 0;
@@ -266,75 +259,4 @@ figure {
     background: yellow;
     min-height: 1500px;
     height: 100%;
-}
-// play button for video
-$size: 50px;
-$ratio: 1.2;
-$transition-time: 0.3s;
-
-.play {
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: $size solid transparent;
-    border-bottom: $size solid transparent;
-    border-left: ($size*$ratio) solid rgba(255, 255, 255, 0.5);
-    margin: 5rem auto 8rem;
-    position: relative;
-    z-index: 1;
-    transition: all $transition-time;
-    -webkit-transition: all $transition-time;
-    -moz-transition: all $transition-time;
-    left: ($size*0.2);
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: ($size*-1.5);
-        left: ($size*-2.3);
-        bottom: ($size*-1.5);
-        right: ($size*-0.7);
-        border-radius: 50%;
-        border: ($size*0.2) solid rgba(255, 255, 255, 0.5);
-        z-index: 2;
-        transition: all $transition-time;
-        -webkit-transition: all $transition-time;
-        -moz-transition: all $transition-time;
-    }
-
-    &:after {
-        content: '';
-        opacity: 0;
-        transition: opacity ($transition-time * 2);
-        -webkit-transition: opacity ($transition-time * 2);
-        -moz-transition: opacity ($transition-time * 2);
-    }
-
-    &:focus,
-    &:hover {
-        border-left: ($size*$ratio) solid rgba(255, 255, 255, 0.8);
-        &:before {
-            transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            border: ($size*0.2) solid rgba(255, 255, 255, 0.8);
-        }
-    }
-
-    &.active {
-        border-color: transparent;
-
-        // &:after {
-        //     content: '';
-        //     opacity: 1;
-        //     width: ($size);
-        //     height: ($size*1.6);
-        //     background: $foreground;
-        //     position: absolute;
-        //     right: ($size*0.1);
-        //     top: ($size*-0.8);
-        //     border-left: ($size*0.4) solid $foreground;
-        //     box-shadow: inset ($size*0.6) 0 0 0 $background;
-        // }
-    }
 }
