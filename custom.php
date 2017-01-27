@@ -1,27 +1,14 @@
-<!-- <span tabindex="0" role="link" class="pseudolink" onclick="location='http://www.willmaster.com'">Software to Make Your Website Work</span> -->
 
-<!-- What about storing the URL in a data attribute on the span, using js to run an each function on the span class name to prepend the opening anchor tag with href from the data attribute and append the closing anchor tag? -->
-
-<!-- custom head -->
 
     <link rel="stylesheet" type="text/css" href="static/css/custom.css">
 
-    <!-- MM_LINK ███████████████████████████████████████████████████ -->
-    <!-- <style>PASTE CUSTOM.CSS HERE</style> -->
-    <!-- ██████████████████████████████████████████████ /END MM_LINK -->
-
-<!-- /end custom head -->
-
-<!-- custom body -->
-    <!-- MM_LINK ███████████████████████████████████████████████████ -->
-    <!-- content header -->
     <section id="content-body-well">
             <!-- nav -->
             <nav id="hc-nav-header">
 
                 <!-- nav wrapper -->
                 <div class="hc-nav-wrapper">
-                    <div id="hc-nav-head">McClatchyDC</div>
+                    <div id="hc-nav-head"><a href="">Mc</a></div>
 
                     <!-- share icons -->
                     <ul class="share-icons">
@@ -48,28 +35,33 @@
             <!-- /end nav -->
 
             <div id="hc-hero">
-                <!-- <img src='static/img/vfx-hero.png' alt="FILL THIS IN"/> -->
                 <div class="hc-vertical-align">
                     <div id="hc-intro">
                         <h1>Hollywood's Greatest Trick</h1>
                         <h2>Coming on February 22, 2017</h2>
 
-                        <p>Visual effects artists have created some of the most iconic moments in movie history — unforgettable scenes that transport us not only to other worlds, but to another place in our own lives… That have lead us into the darkness — and then shown us the light… That have pushed the boundaries of what was thought possible… and turned our wildest dreams into spellbinding images — all with such skill, we sometimes forget it’s a trick.</p>
+                        <p>Visual effects artists have created some of the most iconic moments in movie history — unforgettable scenes that transport us not only to other worlds, but to another place in our own lives. They have pushed the boundaries of what was thought possible… and turned our wildest dreams into spellbinding images — all with such skill, we sometimes forget it’s an illusion.</p>
 
-                        <p>So lucrative for the Big Six studios, The top 10 highest grossing films of 2016 garnered over $9 billion alone. That’s more than the GDP of 55 different countries that same year.  All 10 films contained massive amounts of that one essential ingredient to achieve monumental global box office success: Computer Generated Imagery.</p>
+                        <p>The top 10 highest grossing films of 2016 garnered over $9 billion, and all  contained that one ingredient essential to monumental global box office success: Computer Generated Imagery.</p>
 
-                        <p>But to have us believe these visual effects artists share in this success? That golden statuettes suggest the magicians themselves are truly rewarded? That’s Hollywood’s greatest trick of all.</p>
+                        <p>To convince us these visual effects artists share in this success and that golden statuettes are not the magicians’ only reward — That’s Hollywood’s greatest trick of all.</p>
                     </div>
+                    <button type="button" id="trailer-btn" class="btn btn-secondary btn-lg">Watch the trailer</button>
+                </div>
+                <!-- end intro -->
+            </div>
+            <!-- end vertical align -->
 
-                    <button type="button" class="btn btn-secondary btn-lg">Watch the trailer</button>
-
+            <div id="hc-video">
+                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+                <div class='embed-container'>
+                    <iframe src='http://www.mcclatchydc.com/news/nation-world/article128737819.html/video-embed' frameborder='0' allowfullscreen></iframe>
                 </div>
             </div>
-
+                <!-- <iframe src="http://www.mcclatchydc.com/news/nation-world/article128458254.html/video-embed" width="320" height="200" frameborder="0" allowfullscreen="true"></iframe> -->
 
 
     </section>
-<!-- /end custom body -->
 
 <!-- custom scripts -->
 

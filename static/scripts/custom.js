@@ -9,4 +9,16 @@ $(document).ready(function() {
     //                                                                             | |
     //                                                                             |_|
 
+    var mastheadAlt = $('#masthead-logo img').attr('alt');
+    var newsroomName = mastheadAlt.split(" | ");
+
+    $('#trailer-btn').click(function () {
+        $('#hc-hero').fadeOut(600);
+        $('.embed-container').delay(800).fadeIn(600);
+    });
+
+    $('#hc-nav-head a').text(newsroomName[0]);
+    $('#hc-nav-head a').attr('href', mast_options.publicationUrl)
+
+    $('#div-gpt-ad-4, .ad, #leaderboard-ad').remove();
 });

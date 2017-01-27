@@ -54,7 +54,7 @@ $(document).ready(function() {
 
     function setShareURL() {
         var projectURL = window.location.href;
-        projectURL = "http://www.mcclatchydc.com/news/nation-world/world/article117747598.html";
+        projectURL = "http://www.mcclatchydc.com/news/nation-world/national/article128889914.html";
 
         // Facebook
         var facebookURL = "http://www.facebook.com/sharer/sharer.php?u=" + projectURL;
@@ -69,7 +69,7 @@ $(document).ready(function() {
         $("#hc-twitter-share").attr("href", twitterURL);
 
         // Email
-        var emailPartial = "mailto:?subject=Voters Make the Call: 69 voicemails from 25 states&body=";
+        var emailPartial = "mailto:?subject=Voters Watch Trailer: Hollywood's Greatest Trick &body=";
         var emailURL = emailPartial + projectURL;
         $("#hc-email-share").attr("href", emailURL);
     }

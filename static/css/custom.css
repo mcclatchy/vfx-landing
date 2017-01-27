@@ -1183,6 +1183,10 @@ html {
 #hc-nav-head {
   text-transform: none;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+  #hc-nav-head a {
+    color: white; }
+    #hc-nav-head a:visited, #hc-nav-head a:hover, #hc-nav-head a:focus, #hc-nav-head a:active {
+      color: white; }
 
 .hc-nav-wrapper {
   height: 100%; }
@@ -1274,8 +1278,7 @@ h2 {
     border: #111;
     color: rgba(255, 255, 255, 0.9); }
 
-ﬁ
-.hc-fluid-img {
+ﬁ .hc-fluid-img {
   max-width: 100%; }
 
 [id*="content-body-"] {
@@ -1320,7 +1323,7 @@ figure {
 .hc-breakout-section {
   color: #111; }
 
-.ad {
+.ad, #leaderboard-ad {
   display: none; }
 
 #hc-parallax-wrapper {
@@ -1335,18 +1338,18 @@ figure {
 
 #hc-hero {
   background: black;
-  background-image: url("../img/vfx-hero.png");
+  background-image: url("http://www.mcclatchydc.com/news/n3jo3s/picture128695919/binary/vfx-hero.png");
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
-  min-height: 750px;
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 0;
-  margin-top: 4rem;
-  box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.5); }
+  min-height: 1000px;
+  margin: 4rem 0 0;
+  box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow: auto;
+  left: 0; }
   #hc-hero img {
     opacity: 0.6;
     margin-bottom: 0; }
@@ -1356,5 +1359,33 @@ figure {
   background: yellow;
   min-height: 1500px;
   height: 100%; }
+
+.mcclatchy-embed {
+  display: none;
+  position: absolute;
+  top: 0;
+  padding: 40px 0 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%; }
+
+.mcclatchy-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.container {
+  width: 100%; }
+
+.embed-container {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  margin-top: 40px; }
 
 /*# sourceMappingURL=custom.css.map */
